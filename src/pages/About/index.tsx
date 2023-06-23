@@ -1,7 +1,7 @@
-import { Flex, Heading } from '@chakra-ui/react';
-import AboutSection from './components/AboutSection';
-import { Link } from '@chakra-ui/react';
+import { Flex, Heading, Link } from '@chakra-ui/react';
 import { Link as ReactLink } from 'react-router-dom';
+
+import AboutSection from './components/AboutSection';
 
 function About() {
   return (
