@@ -1,0 +1,17 @@
+import config from '../utils/config';
+
+async function getAll() {
+  const response = await fetch('/all', {
+    headers: {
+      Authorization: config.apiKey,
+    },
+  });
+  return response.json();
+}
+
+async function getOne(id: string) {
+  const response = await fetch(`/users/${id}`);
+  return response.json();
+}
+
+export { getAll, getOne };
