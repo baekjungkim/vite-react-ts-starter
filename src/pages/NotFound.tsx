@@ -1,11 +1,19 @@
+import { Flex, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
-    <>
-      <h1>Not Found</h1>
+    <Flex
+      height="100vh"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="column"
+    >
+      <Heading as="h1" pb="10">
+        Not Found
+      </Heading>
       <Link to="/">Go Home</Link>
-    </>
+    </Flex>
   );
 }
 
